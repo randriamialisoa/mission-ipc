@@ -1,0 +1,25 @@
+MISSION IPC - PROJET ANDROID
+============================
+
+Ce dossier est le code source de l'application. Ce n'est pas encore un fichier .apk :
+il faut le compiler une fois. Le projet n'a pas pu être compilé ni testé avant l'envoi.
+
+L'application fonctionne sans réseau. Les saisies restent dans l'application, sur le
+téléphone. Les fichiers Word et CSV sont enregistrés dans le dossier Téléchargements.
+
+VOIE 1 - Avec un ordinateur et Android Studio
+  1. Installer Android Studio (https://developer.android.com/studio).
+  2. File > Open, choisir ce dossier, attendre la fin de la synchronisation
+     (connexion internet nécessaire la première fois).
+  3. Build > Build App Bundle(s) / APK(s) > Build APK(s).
+  4. Le fichier est dans app/build/outputs/apk/debug/app-debug.apk.
+  5. L'envoyer sur le téléphone (câble, WhatsApp, courriel) et l'ouvrir pour l'installer.
+     Android demandera d'autoriser l'installation depuis cette source.
+
+VOIE 2 - Sans Android Studio, avec un compte GitHub
+  1. Créer un dépôt privé sur github.com et y envoyer tout le contenu de ce dossier.
+  2. Onglet Actions : la tâche "Compiler l'APK" se lance toute seule.
+  3. À la fin, télécharger "MissionIPC-apk" en bas de la page de la tâche.
+
+Pour mettre à jour le contenu : remplacer app/src/main/assets/index.html et recompiler.
+Une mise à jour installée par-dessus l'ancienne version garde les saisies.
